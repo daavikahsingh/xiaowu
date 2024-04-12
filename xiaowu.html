@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Telegram Redirect</title>
+</head>
+<body>
+  <script>
+    // List of random Telegram usernames
+    var telegramUsernames = [
+      "kimkim253rs",
+      "saachi2777",
+      "Your_Anastasia3Ms",
+
+      // Add more random Telegram usernames here
+    ];
+
+    // Get a random index
+    var randomIndex = Math.floor(Math.random() * telegramUsernames.length);
+
+    // Open the Telegram app with the resolved username
+    window.location.href = "tg://resolve?domain=" + telegramUsernames[randomIndex];
+  </script>
+</body>
+</html>
